@@ -8,14 +8,12 @@ platform:
   arch: amd64
 
 
-workspace:
-  path: /root/drone
-#steps:
-    ##  - name: greeting
-  ##    commands:
-  ##      - echo hello world
-
 steps:
+  - name: greeting
+  commands:
+    - echo hello world
+
+#steps:
   - name: build
     commands:
       - mkdir /root/workspace
