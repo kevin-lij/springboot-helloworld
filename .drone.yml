@@ -11,6 +11,7 @@ platform:
      commands:
      - echo hello world
      - ls
+
 #steps:
 #  - name: build
 #    commands:
@@ -23,3 +24,11 @@ platform:
 #    commands:
 #      - cd /root/workspace
 #      - docker-compose up -d
+
+
+trigger:
+  branch:
+    - master
+  event:
+    - pull_request
+    - push
