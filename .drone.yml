@@ -1,3 +1,4 @@
+---
 kind: pipeline
 type: exec
 name: default
@@ -6,29 +7,7 @@ platform:
   os: linux
   arch: amd64
 
- steps:
-   - name: greeting
-     commands:
-     - echo hello world
-     - ls
-
-#steps:
-#  - name: build
-#    commands:
-#      - docker build -t ra-backend:latest .
-#
-#  - name: deploy
-#    when:
-#      branch:
-#        - main
-#    commands:
-#      - cd /root/workspace
-#      - docker-compose up -d
-
-
-trigger:
-  branch:
-    - master
-  event:
-    - pull_request
-    - push
+steps:
+  - name: greeting
+    commands:
+      - echo hello world
