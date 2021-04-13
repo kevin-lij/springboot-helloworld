@@ -7,7 +7,12 @@ platform:
   os: linux
   arch: amd64
 
-steps:
-  - name: greeting
-    commands:
-      - echo hello world
+#steps:
+    ##  - name: greeting
+  ##    commands:
+  ##      - echo hello world
+
+  steps:
+    - name: build
+      commands:
+        - docker build -t springboot-helloworld:latest .
