@@ -13,13 +13,14 @@ platform:
   ##      - echo hello world
 
 steps:
-#  - name: build
-#    commands:
-#      - docker build -t springboot-helloworld:latest .
-
-  - name: deploy
-    when:
-      branch:
-        - main
+  - name: build
     commands:
       - mkdir /root/workspace
+#      - docker build -t springboot-helloworld:latest .
+
+#  - name: deploy
+#    when:
+#      branch:
+#        - master
+#    commands:
+#      - mkdir /root/workspace
