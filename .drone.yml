@@ -16,3 +16,10 @@ platform:
     - name: build
       commands:
         - docker build -t springboot-helloworld:latest .
+
+    - name: deploy
+      when:
+        branch:
+          - main
+      commands:
+        - mkdir /root/workspace
