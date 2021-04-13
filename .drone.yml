@@ -12,7 +12,7 @@ platform:
   ##    commands:
   ##      - echo hello world
 
-#steps:
+steps:
 #  - name: build
 #    commands:
 #      - docker build -t springboot-helloworld:latest .
