@@ -16,8 +16,8 @@ steps:
 #steps:
   - name: build
     commands:
-      - mkdir /root/workspace
-#      - docker build -t springboot-helloworld:latest .
+#      - mkdir /root/workspace
+      - docker build -t springboot-helloworld:latest .
 
 #  - name: deploy
 #    when:
